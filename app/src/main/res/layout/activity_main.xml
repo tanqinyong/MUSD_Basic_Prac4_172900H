@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!-- Commit 2 ? -->
     <!-- Name of movie -->
     <TextView
             android:layout_width="match_parent"
