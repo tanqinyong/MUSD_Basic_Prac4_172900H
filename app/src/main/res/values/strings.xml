@@ -1,14 +1,15 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="movie_name"> Name: </string>
-    <string name="movie_hint"> Enter the title of movie </string>
-    <string name="description"> Description: </string>
-    <string name="description_hint"> Enter a short description of the movie </string>
-    <string name="language"> Language: </string>
-    <string name="release_date"> Release Date:</string>
-    <string name="release_date_enter"> Enter Release Date</string>
-    <string name="chkbx1"> Not suitable for all audience </string>
-    <string name="chkbx2"> Violence </string>
-    <string name="chkbx3"> Language used </string>
-    <string name="add_movie"> Add movie </string>
+    <string name="app_name">MovieRater</string>
+    <string name="movie_name">Name:</string>
+    <string name="movie_hint">Enter the title of movie</string>
+    <string name="description">Description:</string>
+    <string name="description_hint">Enter a short description of the movie</string>
+    <string name="language">Language:</string>
+    <string name="release_date">Release Date:</string>
+    <string name="release_date_enter">Enter Release Date</string>
+    <string name="chkbx1">Not suitable for all audience</string>
+    <string name="chkbx2">Violence</string>
+    <string name="chkbx3">Language used</string>
+    <string name="add_movie">Add movie</string>
+    <string name="title_activity_rate_movie">RateMovie</string>
 </resources>

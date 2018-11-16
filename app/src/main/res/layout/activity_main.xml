@@ -19,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/movie_hint"
+            android:id="@+id/movie_name"
     />
 
     <!-- Description of movie -->
@@ -31,6 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/description_hint"
+            android:id="@+id/movie_description"
     />
 
     <!-- Language checkbox -->
@@ -38,31 +40,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/language"
+            android:id="@+id/language"
     />
     <RadioGroup
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+    >
         <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="English"
+                android:id="@+id/default_radio"
         />
         <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Chinese"
+                android:id="@+id/radioChinese"
 
         />
         <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Malay"
+                android:id="@+id/radioMalay"
         />
         <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tamil"
+                android:id="@+id/radioTamil"
         />
     </RadioGroup>
 
@@ -71,12 +80,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/release_date"
+
     />
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/release_date_enter"
             android:inputType="date"
+            android:id="@+id/release_date"
     />
 
     <!-- Checkbox -->
@@ -84,12 +95,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/chkbx1"
+            android:onClick="chkbx_show"
+            android:id="@+id/chkbx1"
     />
     <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="1">
+            android:weightSum="1"
+    >
         <CheckBox
                 android:id="@+id/chkbx2"
                 android:layout_weight="0.75"
@@ -97,6 +111,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_height="match_parent"
                 android:text="@string/chkbx2"
+                android:visibility="invisible"
         />
         <CheckBox
                 android:id="@+id/chkbx3"
@@ -105,17 +120,31 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_height="match_parent"
                 android:text="@string/chkbx3"
+                android:visibility="invisible"
         />
     </LinearLayout>
 
     <!-- Button -->
-    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
         <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/add_movie"
                 android:layout_gravity="center"
+                android:id="@+id/button"
+
         />
     </LinearLayout>
+
+     <!--View movie button -->
+    <!--<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">-->
+        <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="View Movie Details"-->
+                <!--android:id="@+id/view_movie_btn"-->
+                <!--android:onClick="openActivityViewMovie"-->
+        <!--/>-->
+    <!--</LinearLayout>-->
 
 </LinearLayout>

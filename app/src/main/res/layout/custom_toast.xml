@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/custom_toast_container"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/rounded"
+              android:padding="25dp"
+
+>
+    <!--<ImageView android:src=""-->
+               <!--android:layout_width="wrap_content"-->
+               <!--android:layout_height="wrap_content"-->
+               <!--android:layout_marginRight="8dp"-->
+    <!--/>-->
+
+    <TextView android:id="@+id/movie_name"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#000000"
+    />
+    <TextView android:id="@+id/movie_description"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#000000"
+    />
+    <TextView android:id="@+id/language"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#000000"
+    />
+    <TextView android:id="@+id/release_date"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#000000"
+    />
+    <TextView android:id="@+id/chkbx1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#000000"
+    />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reason(s):"
+            android:textColor="#000000"
+    />
+    <TextView android:id="@+id/chkbx2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#000000"
+    />
+    <TextView
+            android:id="@+id/chkbx3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+    />
+</LinearLayout>
