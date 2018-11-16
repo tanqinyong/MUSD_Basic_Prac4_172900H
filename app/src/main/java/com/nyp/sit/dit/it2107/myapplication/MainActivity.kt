@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
 
                     // variables and stuff for toast
                     var toast: Toast = Toast(this)
-                    var release_date_toast = Date(release_date.text.toString())
+                    var release_date_toast = release_date.text.toString()
                     var suitable_toast = chkbx1.isChecked
 
                     // toast
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
         default_radio.isChecked = true
     }
 
-    fun Toast.createToast(context: Context, movie_name:String, movie_description:String, language:String, release_date:Date, suitable:Boolean, reason1:String, reason2:String, gravity:Int, duration:Int) {
+    fun Toast.createToast(context: Context, movie_name:String, movie_description:String, language:String, release_date:String, suitable:Boolean, reason1:String, reason2:String, gravity:Int, duration:Int) {
         val inflater:LayoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         // first param is layout second param is root view in that xml
         val layout = inflater.inflate(R.layout.custom_toast, (context as Activity).findViewById<ViewGroup>(R.id.custom_toast_container))
@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity() {
         layout.findViewById<TextView>(R.id.movie_name).text = "Title = " + movie_name
         layout.findViewById<TextView>(R.id.movie_description).text = "Overview = " + movie_description
         layout.findViewById<TextView>(R.id.language).text = "Language = " + language
-        layout.findViewById<TextView>(R.id.release_date).text = "Release date = " + format.format(release_date)
+        layout.findViewById<TextView>(R.id.release_date).text = "Release date = " + release_date
         layout.findViewById<TextView>(R.id.chkbx1).text = "Not suitable for all ages = " + suitable
         layout.findViewById<TextView>(R.id.chkbx2).text = reason1
         layout.findViewById<TextView>(R.id.chkbx3).text = reason2
@@ -119,6 +119,7 @@ class MainActivity : AppCompatActivity() {
 
     //
     // view movie?
+
 //    fun sendMessage(view: View) {
 //        val editText = findViewById<EditText>(R.id.editText)
 //        val message = editText.text.toString()
